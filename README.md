@@ -8,7 +8,7 @@ Parre.ug is an event ticketing platform designed to make concerts and entertainm
 
 ---
 
-## 🚀 About the Project
+## About the Project
 
 Attending concerts and entertainment events should not be limited by the ability to pay for a ticket all at once.
 
@@ -16,15 +16,15 @@ Parre.ug aims to bridge this gap by allowing users to book tickets and pay in ma
 
 The platform also provides event organisers with tools to manage events, monitor ticket sales and track payments.
 
-## ⚠️ The Problem
+## The Problem
 
 Many potential concert and event attendees cannot afford the full ticket price upfront. This limits access to entertainment and can result in lost ticket sales for event organisers.
 
-## 💡 Our Solution
+## Our Solution
 
 Parre.ug introduces flexible ticket payments, allowing customers to reserve their tickets and complete payments gradually before receiving their digital tickets.
 
-## ⭐ Key Features
+## Key Features
 
 ### For Event Goers
 
@@ -44,7 +44,7 @@ Parre.ug introduces flexible ticket payments, allowing customers to reserve thei
 - **Analytics:** View event performance and ticket sales information.
 - **Customer Management:** Access booking and attendee information.
 
-## 🔄 How It Works
+## How It Works
 
 1. **Discover** – Browse available events on Parre.ug.
 2. **Select** – Choose an event and preferred ticket category.
@@ -53,7 +53,7 @@ Parre.ug introduces flexible ticket payments, allowing customers to reserve thei
 5. **Receive** – Get your digital QR ticket after full payment.
 6. **Attend** – Present your ticket for scanning and verification at the event.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 The following technologies are planned for the development of Parre.ug.
 
@@ -72,7 +72,7 @@ The following technologies are planned for the development of Parre.ug.
 
 **Payment integrations planned:** MTN Mobile Money, Airtel Money and other supported payment methods.
 
-## 🏗️ Platform Architecture
+## Platform Architecture
 
 Parre.ug is being developed around three main components:
 
@@ -80,11 +80,11 @@ Parre.ug is being developed around three main components:
 - **Backend API:** Handles authentication, event information, bookings, payment records and ticket generation.
 - **Web Dashboard:** Provides event organisers with tools to manage events, monitor ticket sales and view performance.
 
-## 🎯 Target Customers
+## Target Customers
 
 University students, young professionals, entertainment enthusiasts, concert promoters and event organisers.
 
-## 💰 Revenue Model
+## Revenue Model
 
 Parre.ug plans to generate revenue through:
 
@@ -93,7 +93,7 @@ Parre.ug plans to generate revenue through:
 - **Organiser Packages:** Paid packages for event organisers.
 - **Promotional Services:** Paid event promotion and visibility opportunities.
 
-## 📂 Project Structure
+## Project Structure
 
 The repository will contain the application components, backend services and project documentation as development progresses.
 
@@ -119,7 +119,7 @@ Parre-Ug/
 
 *The structure may evolve as development progresses.*
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
 - [ ] UI/UX design and prototyping
 - [ ] Mobile application development
@@ -134,13 +134,13 @@ Parre-Ug/
 - [ ] Organiser dashboard development
 - [ ] Testing and deployment
 
-## 📌 Project Status
+## Project Status
 
 <kbd>In Development</kbd>
 
 Parre.ug is currently in its initial development stage. Features and integrations listed in this README represent the planned platform and may not yet be implemented.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, suggestions and feedback are welcome as the project develops.
 
