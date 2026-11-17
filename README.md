@@ -1,4 +1,4 @@
-# 🎟️ Parre.ug
+# Parre.ug
 
 ### WE WANNA PARRE!
 
@@ -152,7 +152,7 @@ To contribute:
 4. Commit your changes.
 5. Submit a pull request.
 
-## 🌍 Our Vision
+## Our Vision
 
 To make entertainment more accessible by giving people the flexibility to secure their tickets today and pay over time.
 
@@ -160,7 +160,7 @@ To make entertainment more accessible by giving people the flexibility to secure
 
 <p align="center">
 
-### WE WANNA PARRE! 🧡
+### WE WANNA PARRE! 
 
 **Parre.ug — Book Now. Pay Gradually.**
 
