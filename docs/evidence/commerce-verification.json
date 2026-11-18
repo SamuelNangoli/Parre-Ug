@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-11-18T15:01:06.084097+00:00",
+  "timezone": "Africa/Kampala",
+  "sourceState": "feature/organiser-web, including the history-preserving merge of KAMOGA-AKRAM/parre-ug and the public event-array adapter",
+  "automated": {
+    "command": "npm test",
+    "reportedTests": 28,
+    "passed": 28,
+    "failed": 0,
+    "log": "commerce-tests.tap"
+  },
+  "build": {
+    "command": "npm run build",
+    "status": "PASS",
+    "log": "commerce-build.txt"
+  },
+  "browserChecks": [
+    {
+      "scenario": "Public event catalogue",
+      "actual": "Published events appear; search gives a useful empty state.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Account-required checkout",
+      "actual": "Buy tickets opens sign-in; registration preserves the selected event, quantity and plan.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Mobile Money input",
+      "actual": "Checkout accepts a fictitious Ugandan number and opens an explicit local test preview.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Failed payment",
+      "actual": "The failure message is shown; API checks confirm that balance and ticket eligibility remain unchanged.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "First instalment",
+      "actual": "UGX 12,500 recorded against UGX 50,000; UGX 37,500 remains and the ticket is locked.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Card option and final balance",
+      "actual": "Visa preview records the remaining UGX 37,500; balance reaches zero and a clearly marked TEST ticket appears.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "After-sales support",
+      "actual": "The customer request appears in admin support and is resolved with a reply. The API checks verify customer retrieval.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Customer/admin separation",
+      "actual": "The signed-in customer is denied the admin screen; direct API requests are rejected too.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Admin accounts and orders",
+      "actual": "Platform overview includes the new booking; account names, roles and access status are shown.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Organiser isolation",
+      "actual": "Organiser login opens its own workspace; the second organiser event is excluded by the API.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Organiser event persistence",
+      "actual": "A Rooftop December draft is saved with date 2026-12-29 and remains after refresh.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Mobile UI",
+      "actual": "Customer views checked at 390px and 360px without page-wide horizontal overflow; the 390px admin menu opens and changes section.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Full-payment quote",
+      "actual": "Two VIP tickets for The Sunday Social show UGX 160,000 due now on mobile checkout.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Final restart",
+      "actual": "The latest development API and customer preview respond successfully after restart; the preview is signed out.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Imported Express/MySQL event feed",
+      "actual": "GET /api/events returns the two supplied seed events without authentication; the Vite proxy returns the same array. Tested with a separate MariaDB database.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Photographic authentication and event imagery",
+      "actual": "Supplied concert photo on sign-in and sign-up; equal desktop columns and stacked phone layout. All eight catalogue images loaded; no page-wide overflow at the inspected 390px viewport.",
+      "status": "PASS"
+    }
+  ],
+  "notVerified": [
+    "Live Thewton Pay integration or provider sandbox",
+    "Real Mobile Money prompts or card charges",
+    "Email verification, email/SMS delivery and password recovery",
+    "Real signed QR ticket issuance or scanning",
+    "Production deployment or offline use"
+  ],
+  "backendIntegration": "backend-integration.json"
+}

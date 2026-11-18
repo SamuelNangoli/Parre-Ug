@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-17T21:14:46.064Z",
+  "browser": "156.0.8078.79",
+  "baseCommit": "07f732ed1901f24623d77e1e2d550fe5162addd5",
+  "sourceState": "Uncommitted branded web app on feature/organiser-web",
+  "scope": "Frontend starter only. Not the exam end-to-end or access-control tests.",
+  "checks": [
+    {
+      "scenario": "Overview totals",
+      "result": "UGX 500,000 collected; UGX 160,000 outstanding; 11 tickets; 2 published events",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Branding and palette",
+      "result": "Supplied logo loads; official orange token is applied; prototype/exam labels are absent",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Web app manifest and icons",
+      "result": "Standalone manifest, favicon, Apple icon and all app icons are served successfully",
+      "status": "PASS"
+    },
+    {
+      "scenario": "App navigation history",
+      "result": "Current section survives refresh; Back returns from bookings to events",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Event filters, search and empty state",
+      "result": "Draft returns one event; unmatched search shows a useful empty state",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Required event fields and focus",
+      "result": "Blank title, venue and date show errors; focus moves to first invalid field",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Invalid price",
+      "result": "Negative ticket price is rejected",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Create and refresh",
+      "result": "New sample event survives a page refresh",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Edit and refresh",
+      "result": "Edited event name survives a refresh",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Existing reservations and keyboard dialog close",
+      "result": "Capacity below 5 is rejected; Escape closes the editor",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Booking search and instalment status",
+      "result": "PAR-1005 returns one part-paid booking",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Corrupt saved state recovery",
+      "result": "Error view is shown and Reset workspace restores the seed records",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Responsive layouts and navigation",
+      "result": "360px, 390px, 768px and 1024px have no page overflow; mobile menu and modal are usable",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Browser runtime",
+      "result": "No uncaught page errors during the scenarios",
+      "status": "PASS"
+    }
+  ],
+  "historical": true,
+  "note": "Pre-account organiser starter; see commerce-verification.json for the current app."
+}
