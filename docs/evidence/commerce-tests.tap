@@ -1,0 +1,183 @@
+
+> parre-organiser-web@0.1.0 test
+> node --test src/lib/*.test.js server/*.test.js
+
+TAP version 13
+# Subtest: accounts, role checks, order integrity, payments and after-sales work together
+    # Subtest: browsing is public and purchases require an account
+    ok 1 - browsing is public and purchases require an account
+      ---
+      duration_ms: 72.142832
+      type: 'test'
+      ...
+    # Subtest: registration creates only a customer and uses an HttpOnly cookie
+    ok 2 - registration creates only a customer and uses an HttpOnly cookie
+      ---
+      duration_ms: 736.18163
+      type: 'test'
+      ...
+    # Subtest: CSRF and foreign origins are rejected
+    ok 3 - CSRF and foreign origins are rejected
+      ---
+      duration_ms: 8.964484
+      type: 'test'
+      ...
+    # Subtest: server prices orders and deduplicates order creation
+    ok 4 - server prices orders and deduplicates order creation
+      ---
+      duration_ms: 25.940105
+      type: 'test'
+      ...
+    # Subtest: failed payments leave balances and tickets unchanged
+    ok 5 - failed payments leave balances and tickets unchanged
+      ---
+      duration_ms: 7.670454
+      type: 'test'
+      ...
+    # Subtest: instalments use server amounts and retries do not double-charge
+    ok 6 - instalments use server amounts and retries do not double-charge
+      ---
+      duration_ms: 9.262376
+      type: 'test'
+      ...
+    # Subtest: card details are rejected and full payment unlocks a test ticket
+    ok 7 - card details are rejected and full payment unlocks a test ticket
+      ---
+      duration_ms: 10.13631
+      type: 'test'
+      ...
+    # Subtest: full-payment orders charge the complete saved total in one test payment
+    ok 8 - full-payment orders charge the complete saved total in one test payment
+      ---
+      duration_ms: 6.999635
+      type: 'test'
+      ...
+    # Subtest: organisers are limited to their own events
+    ok 9 - organisers are limited to their own events
+      ---
+      duration_ms: 370.347991
+      type: 'test'
+      ...
+    # Subtest: admin sees the platform without password/session hashes
+    ok 10 - admin sees the platform without password/session hashes
+      ---
+      duration_ms: 360.735802
+      type: 'test'
+      ...
+    # Subtest: ticket capacity is enforced across accounts
+    ok 11 - ticket capacity is enforced across accounts
+      ---
+      duration_ms: 12.181811
+      type: 'test'
+      ...
+    # Subtest: after-sales requests and staff replies persist
+    ok 12 - after-sales requests and staff replies persist
+      ---
+      duration_ms: 11.908874
+      type: 'test'
+      ...
+    # Subtest: suspension and logout revoke server sessions
+    ok 13 - suspension and logout revoke server sessions
+      ---
+      duration_ms: 13.13239
+      type: 'test'
+      ...
+    1..13
+ok 1 - accounts, role checks, order integrity, payments and after-sales work together
+  ---
+  duration_ms: 3061.000779
+  type: 'test'
+  ...
+# Subtest: credentials are salted hashes and persisted state reopens without raw session tokens
+ok 2 - credentials are salted hashes and persisted state reopens without raw session tokens
+  ---
+  duration_ms: 2134.666994
+  type: 'test'
+  ...
+# Subtest: maps the public backend array without inventing booking capacity or VIP prices
+ok 3 - maps the public backend array without inventing booking capacity or VIP prices
+  ---
+  duration_ms: 31.251014
+  type: 'test'
+  ...
+# Subtest: dates use Kampala time across a UTC midnight boundary
+ok 4 - dates use Kampala time across a UTC midnight boundary
+  ---
+  duration_ms: 0.863835
+  type: 'test'
+  ...
+# Subtest: rejects malformed responses, duplicate IDs, invalid dates and unsafe UGX values
+ok 5 - rejects malformed responses, duplicate IDs, invalid dates and unsafe UGX values
+  ---
+  duration_ms: 1.649972
+  type: 'test'
+  ...
+# Subtest: reads the upstream public array and keeps local checkout events separate
+ok 6 - reads the upstream public array and keeps local checkout events separate
+  ---
+  duration_ms: 124.965526
+  type: 'test'
+  ...
+# Subtest: failed or malformed upstream feeds show an explicit notice and preserve working local listings
+ok 7 - failed or malformed upstream feeds show an explicit notice and preserve working local listings
+  ---
+  duration_ms: 2.727982
+  type: 'test'
+  ...
+# Subtest: a failed local adapter does not hide working upstream event listings
+ok 8 - a failed local adapter does not hide working upstream event listings
+  ---
+  duration_ms: 1.692131
+  type: 'test'
+  ...
+# Subtest: sample events are valid against their existing bookings
+ok 9 - sample events are valid against their existing bookings
+  ---
+  duration_ms: 6.953678
+  type: 'test'
+  ...
+# Subtest: rejects blank names and invalid calendar dates
+ok 10 - rejects blank names and invalid calendar dates
+  ---
+  duration_ms: 1.060747
+  type: 'test'
+  ...
+# Subtest: rejects fractional or non-positive UGX prices and capacities
+ok 11 - rejects fractional or non-positive UGX prices and capacities
+  ---
+  duration_ms: 0.611377
+  type: 'test'
+  ...
+# Subtest: cannot reduce capacity below tickets already reserved, including unpaid bookings
+ok 12 - cannot reduce capacity below tickets already reserved, including unpaid bookings
+  ---
+  duration_ms: 0.527409
+  type: 'test'
+  ...
+# Subtest: rejects unexpected publishing states and missing categories
+ok 13 - rejects unexpected publishing states and missing categories
+  ---
+  duration_ms: 0.62856
+  type: 'test'
+  ...
+# Subtest: payment labels distinguish paid, part-paid and unpaid bookings
+ok 14 - payment labels distinguish paid, part-paid and unpaid bookings
+  ---
+  duration_ms: 0.425334
+  type: 'test'
+  ...
+# Subtest: currency is displayed in whole Ugandan shillings
+ok 15 - currency is displayed in whole Ugandan shillings
+  ---
+  duration_ms: 24.636238
+  type: 'test'
+  ...
+1..15
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5581.279746

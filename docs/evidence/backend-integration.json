@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-18T12:08:20.529Z",
+  "backend": "KAMOGA-AKRAM/parre-ug, latest MySQL events commit imported",
+  "database": "isolated MariaDB test database on loopback port 3307; supplied schema and seed",
+  "directEvents": {
+    "status": 200,
+    "authentication": "none",
+    "rows": [
+      {
+        "id": 1,
+        "name": "Kampala Live Night",
+        "venue": "Demo Arena",
+        "startsAt": "2026-12-12T15:00:00.000Z",
+        "priceUgx": 50000
+      },
+      {
+        "id": 2,
+        "name": "Mukono Music Festival",
+        "venue": "Demo Grounds",
+        "startsAt": "2026-12-19T13:00:00.000Z",
+        "priceUgx": 35000
+      }
+    ]
+  },
+  "viteProxy": {
+    "url": "http://127.0.0.1:5202/api/events",
+    "matchesDirectResponse": true
+  },
+  "adapter": {
+    "dateTimezone": "Africa/Kampala",
+    "upstreamPricesPreserved": true,
+    "upstreamBookingDisabled": true
+  },
+  "localAdapter": {
+    "events": 200,
+    "session": 200
+  },
+  "limitations": [
+    "Upstream events have no booking or stock endpoint.",
+    "Account/order/payment service is still the isolated local test adapter.",
+    "Thewton Pay is not connected."
+  ]
+}
